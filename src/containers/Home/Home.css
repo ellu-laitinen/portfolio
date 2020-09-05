@@ -1,7 +1,19 @@
-body {
-    background: coral;
-}
+
 
 .home-img {
     width: 25vh;
+    border-radius: 50%;
+    border: 1px solid;
+    margin: 1.2rem 0;
+
+}
+
+
+.link {
+    color: white;
+}
+
+.link:hover {
+    text-decoration: none;
+    color: black;
 }

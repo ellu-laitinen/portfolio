@@ -36,6 +36,7 @@ const experience = [
         position: "Nurse",
         ward: "Pediatric heart diseases"
     }
+
 ]
 
 export default experience;

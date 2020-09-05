@@ -4,11 +4,12 @@
     padding: 1rem;
     background-color: rgba(218, 205, 205, 0.63);
     color: black;
-    position: absolute;
+    text-align: center;
+
 }
 
 .project-image {
-    width: 45vh;
+    width: 80%;
     margin: 20px;
-    position: relative;
+   
 }

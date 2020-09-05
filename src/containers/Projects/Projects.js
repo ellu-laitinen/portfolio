@@ -28,16 +28,16 @@ const Projects = () => {
 
     })
     return (
-        <Container>
-            <Col>
-                <div className="project-container">
-                    <h1>Projects</h1>
-                    <p className="project-p">Here you can find some of the projects I've done at school. All of my project codes can be found in <a className="extLink" href="http://www.github.com/ellu-laitinen">GitHub.</a> </p>
-                    {projectsList}
 
-                </div>
-            </Col>
-        </Container>
+        <div className="project-container">
+            <div>
+                <h1>Projects</h1>
+                <p className="project-p">Here you can find some of the projects I've done at school. All of my project codes can be found in <a className="extLink" href="http://www.github.com/ellu-laitinen">GitHub.</a> </p>
+                {projectsList}
+            </div>
+
+        </div>
+
     );
 }
 

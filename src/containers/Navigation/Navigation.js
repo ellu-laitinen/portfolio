@@ -8,24 +8,24 @@ const Navigation = () => {
         <Nav className="justify-content-end" style={{ width: "90%" }}>
             <Nav.Item>
                 <LinkContainer style={{ color: "white" }} to="/" exact>
-                    <Nav.Link>&lt;Home/&gt;</Nav.Link>
+                    <Nav.Link>&lt;Home&gt;</Nav.Link>
                 </LinkContainer>
             </Nav.Item>
             <Nav.Item>
                 <LinkContainer style={{ color: "white" }} to="/about">
-                    <Nav.Link>&lt;About/&gt;</Nav.Link>
+                    <Nav.Link>&lt;About&gt;</Nav.Link>
                 </LinkContainer>
             </Nav.Item>
             <Nav.Item>
                 <LinkContainer style={{ color: "white" }} to="/projects">
-                    <Nav.Link>&lt;Projects/&gt;</Nav.Link>
+                    <Nav.Link>&lt;Projects&gt;</Nav.Link>
                 </LinkContainer>
             </Nav.Item>
-            {/*    <Nav.Item>
-                <LinkContainer className="nav-link" to="/contact">
-                    <Nav.Link>&lt;Contact/&gt;</Nav.Link>
+            <Nav.Item>
+                <LinkContainer style={{ color: "white" }} className="nav-link" to="/download_cv">
+                    <Nav.Link>&lt;Download CV (in Finnish)&gt;</Nav.Link>
                 </LinkContainer>
-            </Nav.Item> */}
+            </Nav.Item>
 
 
         </Nav>

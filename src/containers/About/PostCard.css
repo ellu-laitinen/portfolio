@@ -4,4 +4,10 @@
     padding: 1rem;
     background-color: rgba(218, 205, 205, 0.63);
     color: black;
+    border-radius: 3px;
+    box-shadow: 0 0 3px;
+    display: inline-block;
+}
+li {
+    list-style-type: none;
 }

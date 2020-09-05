@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
 
 .home-div {
     border: solid black 1px;
@@ -6,6 +6,9 @@
     padding: 1rem;
     background-color: rgba(218, 205, 205, 0.63);
     color: black;
+    border-radius: 3px;
+    box-shadow: 0 0 3px;
+    
 }
 
 .home-img {
@@ -13,6 +16,7 @@
     border-radius: 50%;
     border: 1px solid;
     margin: 1.2rem 0;
+    box-shadow: 0 0 3px;
 
 }
 
@@ -34,8 +38,11 @@
 
 .home-subtitle{
     margin-left: 2rem;
+    font-family: 'Kalam', cursive;
+    font-size: xx-large;
 }
 
 .heart-icon {
     color: rgb(136, 0, 0);
+
 }

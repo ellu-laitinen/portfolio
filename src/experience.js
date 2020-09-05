@@ -4,7 +4,7 @@ const experience = [
         title: "HUS Naistenklinikka",
         duration: "21.10.2019 - 7.1.2020",
         position: "Midwife",
-        ward: "Labor and delivery Ward"
+        ward: "Labor and delivery ward"
 
     },
     {
@@ -12,7 +12,7 @@ const experience = [
         title: "HUS Naistenklinikka",
         duration: "8.10.2018 - 20.10.2019",
         position: "Midwife",
-        ward: "Labor and delivery Ward"
+        ward: "Labor and delivery ward"
 
     },
     {
@@ -20,14 +20,14 @@ const experience = [
         title: "HUS Kätilöopisto/Naistenklinikka",
         duration: "4.7.2016 - 7.10.2018",
         position: "Midwife",
-        ward: "Maternity Ward"
+        ward: "Maternity ward"
     },
     {
         id: 4,
         title: "HUS Kätilöopisto",
         duration: "4.6.2013 - 18.8.2013",
         position: "Midwife",
-        ward: "Maternity Ward"
+        ward: "Maternity ward"
     },
     {
         id: 5,

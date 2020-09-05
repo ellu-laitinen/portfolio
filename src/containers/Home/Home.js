@@ -27,9 +27,9 @@ const Home = () => {
                     <ul>
                             <li>HTML/CSS/SASS</li>
                             <li>JavaScript</li>
-                            <li>React</li>
+                            <li>ReactJS</li>
                             <li>Redux</li>
-                            <li>Node</li>
+                            <li>NodeJS</li>
                         </ul>
                     On the <Link to="/about" className="link"> about </Link> page you can see my work experience and education.
                     <br />

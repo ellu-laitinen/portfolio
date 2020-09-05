@@ -1,5 +1,9 @@
 .active {
-background: rgba(228, 81, 13, 0.548);
-border-radius: 50%;
+background: rgba(167, 167, 167, 0.548);
+border-radius: 5%
 
+}
+
+.link {
+    color: white;
 }

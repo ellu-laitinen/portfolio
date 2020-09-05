@@ -1,5 +1,13 @@
 
 
+.home-div {
+    border: solid black 1px;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: rgba(218, 205, 205, 0.63);
+    color: black;
+}
+
 .home-img {
     width: 25vh;
     border-radius: 50%;
@@ -16,4 +24,18 @@
 .link:hover {
     text-decoration: none;
     color: black;
+}
+
+.home-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.home-subtitle{
+    margin-left: 2rem;
+}
+
+.heart-icon {
+    color: rgb(136, 0, 0);
 }

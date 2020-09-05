@@ -1,24 +1,43 @@
 import React from 'react';
 import './Project.css'
+import Container from 'react-bootstrap/Container'
+import Col from 'react-bootstrap/Col'
+import projectsdb from '../../projectsdb'
+import ProjectCard from './ProjectCard'
 
 
 const Projects = () => {
+    const projects = projectsdb;
+
+    const projectsList = projects.map((p) => {
+        return (
+            <ProjectCard
+                key={p.id}
+                name={p.name}
+                desc={p.desc}
+                img={p.img}
+                alt={p.alt}
+                link={p.link}
+                code={p.code}
+            />
+
+
+
+
+        )
+
+    })
     return (
-        <div>
-            <h1>Projects</h1>
-            <p>Here you can find some of the project I've done at school</p>
-            <div>
-                <h4>Music from my year</h4>
-                <p>Music app that uses Spotify API. School project by 3 students. Amount of time spent on the project: 3,5 weeks. </p>
-                <a href="http://lauratellervo.fi/mymusic/#" target="_blank" rel="noopener noreferrer">Link to app</a>
-                <a href="https://github.com/ellu-laitinen/music-app" target="_blank" rel="noopener noreferrer">Source code</a>
-                <div>
-                    <img className="musicApp" src="./images/my-music1.png" alt="App front page" />
-                    <img className="musicApp" src="./images/my-music2.png" alt="App search page" />
-                    <img className="musicApp" src="./images/my-music3.png" alt="App results example page" />
+        <Container>
+            <Col>
+                <div className="project-container">
+                    <h1>Projects</h1>
+                    <p className="project-p">Here you can find some of the projects I've done at school. All of my project codes can be found in <a className="extLink" href="http://www.github.com/ellu-laitinen">GitHub.</a> </p>
+                    {projectsList}
+
                 </div>
-            </div>
-        </div>
+            </Col>
+        </Container>
     );
 }
 

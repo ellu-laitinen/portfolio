@@ -8,22 +8,26 @@ import Header from './containers/Header/Header'
 import Footer from './containers/Footer/Footer'
 import Contact from './containers/Contact/Contact'
 
-function App() {
+const App = () => {
 
 
   return (
+
     <BrowserRouter>
-      <Header />
-      <div className="rootDiv">
+      <div className="App">
+        <Header />
+
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/about" component={About} />
           <Route path="/projects" component={Projects} />
-          <Route path="/contact" component={Contact} />
+          {/*  <Route path="/contact" component={Contact} /> */}
         </Switch>
+
+        {/*     <Footer /> */}
       </div>
-      <Footer />
     </BrowserRouter>
+
   );
 }
 

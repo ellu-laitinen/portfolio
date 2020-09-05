@@ -1,4 +1,7 @@
-/* .cv-div {
-    border: black 1px solid;
-    margin-top: 3px;
-} */
+
+
+.cv-container  {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

@@ -33,7 +33,7 @@ const Projects = () => {
 
             <h1>Projects</h1>
 
-            <div><p className="project-p">Here you can find some of the projects I've done at school. All of my project codes can be found in <a className="extLink" href="http://www.github.com/ellu-laitinen" target="_blank" rel="noopener noreferrer">GitHub.</a>
+            <div><p className="project-p">Here you can find some of the projects I've made at school. All of my project codes can be found in <a className="extLink" href="http://www.github.com/ellu-laitinen" target="_blank" rel="noopener noreferrer">GitHub.</a>
             This portfolio was made with ReactJS, and the source code can be found <a className="extLink" href="http://www.github.com/ellu-laitinen/portfolio" target="_blank" rel="noopener noreferrer">here.</a></p>
                 {projectsList}
             </div>

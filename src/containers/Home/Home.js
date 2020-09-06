@@ -18,18 +18,20 @@ const Home = () => {
                 <div className="home-div">
                     <p>
                         Hi! Welcome to my portfolio!
-                    My name is Elisabet, and I'm a Full Stack Web development student in Helsinki Business College. My main goal is to become a <b>front-end developer</b>,
-                    and I'm enthusiastic about learning more about React and Redux! Our trainig programme is a <b>no-nonsense approach </b> to coding and
+                    My name is Elisabet, and I'm a Full Stack Web development student in <a className="link" href="https://www.bc.fi/" target="_blank" rel="noopener noreferrer">Helsinki Business College</a>. I'm particularly interested in <b>front-end development</b>,
+                    and I'm enthusiastic about learning more about React and Redux! <br /> Our training programme is a <b>no-nonsense approach </b> to coding and
                     we've been writing code and making small projects every day from day one.
                     <br />
                         <br />
-                    Programming languages, techologies and tools I have used:
+                    Programming languages, technologies and tools I have used:
                     <ul>
-                            <li>HTML/CSS/SASS</li>
+                            <li>HTML/CSS/SCSS</li>
                             <li>JavaScript</li>
                             <li>ReactJS</li>
                             <li>Redux</li>
                             <li>NodeJS</li>
+                            <li>UI design</li>
+                            <li>Scrum method</li>
                         </ul>
                     On the <Link to="/about" className="link"> about </Link> page you can see my work experience and education.
                     <br />

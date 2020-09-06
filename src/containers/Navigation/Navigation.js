@@ -5,7 +5,7 @@ import './Navigation.css'
 
 const Navigation = () => {
     return (
-        <Nav className="justify-content-end" style={{ width: "90%" }}>
+        <Nav className="justify-content-end " style={{ width: "90%" }}>
             <Nav.Item>
                 <LinkContainer style={{ color: "white" }} to="/" exact>
                     <Nav.Link>&lt;Home&gt;</Nav.Link>

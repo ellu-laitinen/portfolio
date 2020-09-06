@@ -29,3 +29,8 @@ a:hover {
     color: black;
 
 }
+
+.download-icon {
+    margin-left: 5px;
+    color: rgb(128, 6, 2);
+}

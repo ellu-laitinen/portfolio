@@ -1,36 +1,34 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 html {
+    margin: 0;
     width: 100%;
     height: auto;
     min-width: 100%;
     min-height: 100%;
     position: relative;  
 /*     color: white; */
-
-padding-bottom: 50px;
+    padding-bottom: 50px;
+    overflow-x: hidden;
     
-
-
 }
 
 html::before {
     background-image: url('/field.jpg');
     background-size: cover;
     content: "";
-   
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: -1;
-    opacity: 0.7;
+    opacity: 0.8;
 
 }
 
 html::after {
-    background-color: rgb(34, 34, 34);
+    background-color: rgb(87, 87, 87);
     
     content: "";
   
@@ -40,7 +38,7 @@ html::after {
     width: 100%;
     height: 100%;
     z-index: -1;
-    opacity: 0.4; 
+    opacity: 0.3; 
 
 }  
 

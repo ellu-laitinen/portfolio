@@ -7,7 +7,20 @@
     border-radius: 3px;
     box-shadow: 0 0 3px;
     display: inline-block;
+    width: 50vh;
 }
 li {
     list-style-type: none;
+}
+
+@media screen and (max-width: 823px) {
+    .postcard {
+        width: 40%;
+    }
+ 
+}
+@media screen and (max-width: 414px) {
+    .postcard {
+        width: 60%;
+    }
 }

@@ -2,14 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 html {
     margin: 0;
-    width: 100%;
+    width: auto;
     height: auto;
     min-width: 100%;
     min-height: 100%;
-    position: relative;  
+    position: absolute;  
 /*     color: white; */
     padding-bottom: 50px;
-    overflow-x: hidden;
+ 
     
 }
 

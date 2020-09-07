@@ -34,3 +34,16 @@ a:hover {
     margin-left: 5px;
     color: rgb(128, 6, 2);
 }
+
+
+@media screen and (max-width: 823px) {
+    .cv {
+        width: 40%;
+    }
+ 
+}
+@media screen and (max-width: 414px) {
+    .cv {
+        width: 80%;
+    }
+}

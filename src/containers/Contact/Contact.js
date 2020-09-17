@@ -3,9 +3,6 @@ import './Contact.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons'
 
-
-/* import cv from '../../../public/files/' */
-
 const Contact = () => {
     return (
         <div className="download-cv">

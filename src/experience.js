@@ -42,6 +42,25 @@ const experience = [
         duration: "30.5.2009 - 13.9.2009",
         position: "First Aid Nurse",
         ward: "Linnanmäki Amusement Park"
+    },
+    {
+        id: 7,
+        title: "Video Film Town Oy",
+        duration: "26.6.2007 - 30.6.2008",
+        position: "Cashier"
+    },
+    {
+        id: 8,
+        title: "Citymarket Oy Jumbo",
+        duration: "7.11.2006 - 2.6.2007",
+        position: "Cashier"
+    },
+    {
+        id: 9,
+        title: "Mikrofilm Systems Helsinki Oy",
+        duration: "1.6 - 30.6.2006",
+        position: "Microphotographer",
+        ward: "Microfilming old documents"
     }
 
 ]

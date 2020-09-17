@@ -32,9 +32,16 @@ const experience = [
     {
         id: 5,
         title: "HUS Lastenklinikka",
-        duration: "4.6.2013 - 18.8.2013",
+        duration: "26.5.2011 - 14.8.2011",
         position: "Nurse",
         ward: "Pediatric heart diseases"
+    },
+    {
+        id: 6,
+        title: "Lasten Päivän Säätiö",
+        duration: "30.5.2009 - 13.9.2009",
+        position: "First Aid Nurse",
+        ward: "Linnanmäki Amusement Park"
     }
 
 ]

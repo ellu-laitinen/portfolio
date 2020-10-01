@@ -16,7 +16,7 @@ const projectsDb = [
         img: "./images/halloween_shop.jpg",
         alt: "Halloween shop front page with Halloween items",
         link: "https://react-burger-app-45ff5.web.app/",
-        code: "https://github.com/ellu-laitinen/react-burger-app-project"
+        code: "https://github.com/ellu-laitinen/react-halloween-shop-project"
 
     },
     {

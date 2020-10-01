@@ -58,7 +58,7 @@ const experience = [
     {
         id: 9,
         title: "Mikrofilm Systems Helsinki Oy",
-        duration: "1.6 - 30.6.2006",
+        duration: "1.6 - 30.8.2006",
         position: "Microphotographer",
         ward: "Microfilming old documents"
     }

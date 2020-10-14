@@ -11,6 +11,16 @@ const projectsDb = [
     },
     {
         id: 2,
+        name: "Christmas advent calendar for kids",
+        desc: "A christmas advent calendar I made for kids. I Finnish only! React app. Uses Localstorage to keep the opened windows open after refreshing the page. At the moment all windows can be opened, but from Dec 1st 2020 you can only open the current and previous days' windows.",
+        img: "./images/kalenteri2.jpg",
+        alt: "Christmas advent calendar with two windows open",
+        link: "https://lunas-calendar.web.app/",
+        code: "https://github.com/ellu-laitinen/lunas-calendar"
+
+    },
+    {
+        id: 3,
         name: "React Halloween Shop",
         desc: "Project made with 'React -the complete guide' from Udemy.com course by Maximilian Schwarzmüller. The original project was a Burger App, but I modified my own project and turned it into a Halloween Shop.",
         img: "./images/halloween_shop.jpg",
@@ -20,7 +30,7 @@ const projectsDb = [
 
     },
     {
-        id: 3,
+        id: 4,
         name: "Speed Game",
         desc: "School project: a classic speed game. Built with React.",
         img: "./images/speed_game.jpg",
@@ -30,7 +40,7 @@ const projectsDb = [
 
     },
     {
-        id: 4,
+        id: 5,
         name: "Weather App",
         desc: "Project made with Udemy.com course The Complete Node.js Developer(3rd Edition) by Andrew Mead. Uses data from mapbox.com and weatherstack.com",
         img: "./images/weather-app1.png",

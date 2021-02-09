@@ -4,8 +4,6 @@ import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 
-import "./PostCard.css";
-
 const PostCard = ({ title, position, ward, duration }) => {
   return (
     <Grid container spacing={2}>

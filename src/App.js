@@ -1,20 +1,17 @@
-import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
-import Home from './containers/Home/Home'
-import Projects from './containers/Projects/Projects'
-import About from './containers/About/About'
-import './App.css';
-import Header from './containers/Header/Header'
-import Footer from './containers/Footer/Footer'
-import Contact from './containers/Contact/Contact'
+import React from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Home from "./containers/Home/Home";
+import Projects from "./containers/Projects/Projects";
+import About from "./containers/About/About";
+import "./App.css";
+import Header from "./containers/Header/Header";
+import Footer from "./containers/Footer/Footer";
+import Contact from "./containers/Contact/Contact";
 
 const App = () => {
-
-
   return (
-
-    <BrowserRouter>
-      <div className="App">
+    <div className="App">
+      <BrowserRouter>
         <Header />
 
         <Switch>
@@ -23,12 +20,10 @@ const App = () => {
           <Route path="/projects" component={Projects} />
           <Route path="/download_cv" component={Contact} />
         </Switch>
-
-        <Footer />
-      </div>
-    </BrowserRouter>
-
+        {/*         <Footer /> */}
+      </BrowserRouter>
+    </div>
   );
-}
+};
 
 export default App;

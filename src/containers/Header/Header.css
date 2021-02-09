@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Pangolin&display=swap");
 
 .navbar {
-    background: rgba(172, 171, 171, 0.651);
-    margin-bottom: 2rem;
+  background: rgb(0, 0, 136);
+  margin-bottom: 2rem;
 }
-

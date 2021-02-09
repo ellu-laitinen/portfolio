@@ -1,49 +1,6 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
-html {
-    margin: 0;
-    width: auto;
-    height: auto;
-    min-width: 100%;
-    min-height: 100%;
-    position: absolute;  
-/*     color: white; */
-    padding-bottom: 50px;
- 
-    
-}
-
-html::before {
-    background-image: url('/field.jpg');
-    background-size: cover;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    opacity: 0.8;
-
-}
-
-html::after {
-    background-color: rgb(87, 87, 87);
-    
-    content: "";
-  
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    opacity: 0.3; 
-
-}  
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
 
 .App {
-    font-family: 'Quicksand', sans-serif;
-
-
+  font-family: "Quicksand", sans-serif;
+  background-color: rgb(107, 97, 253);
 }

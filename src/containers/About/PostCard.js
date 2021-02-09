@@ -1,22 +1,29 @@
-import React from 'react';
-import Card from 'react-bootstrap/Card'
-import './PostCard.css'
+import React from "react";
+import Card from "@material-ui/core/Card";
+import CardContent from "@material-ui/core/CardContent";
+import Typography from "@material-ui/core/Typography";
+import Grid from "@material-ui/core/Grid";
+
+import "./PostCard.css";
 
 const PostCard = ({ title, position, ward, duration }) => {
-    return (
-        <div className="postcard">
-            <h3>{title}</h3>
-            <p><i>{duration}</i></p>
-            <ul>
-                <li>{position}</li>
-                <br></br>
-                <li>{ward}</li>
-            </ul>
-            {/*  <p></p>
-            <p>{ward}</p> */}
+  return (
+    <Grid container spacing={2}>
+      <Grid item xs={12}>
+        <Card>
+          <CardContent>
+            <Typography variant="h5">{title}</Typography>
+            <Typography component="p">
+              <Typography variant="subtitle1">{duration}</Typography>
+            </Typography>
+            <Typography>{position}</Typography>
 
-        </div>
-    );
-}
+            <Typography>{ward}</Typography>
+          </CardContent>
+        </Card>
+      </Grid>
+    </Grid>
+  );
+};
 
 export default PostCard;

@@ -1,34 +1,73 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
+import Grid from "@material-ui/core/Grid";
 import Switch from "@material-ui/core/Switch";
-/* 
-import { ThemeContext } from "../../_Contexts/ThemeContext"; */
+import Typography from "@material-ui/core/Typography";
+import { makeStyles } from "@material-ui/core/styles";
+
+import { ThemeContext } from "../../_Contexts/ThemeContext";
+
+const useStyles = makeStyles(() => ({
+  root: {
+    backgroundColor: "grey",
+  },
+  link: {
+    textDecoration: "none",
+    color: "white",
+
+    "&:hover": {
+      textDecoration: "underline",
+    },
+  },
+}));
 
 const Navigation = () => {
-  /*   const { toggleTheme, activeTheme } = useContext(ThemeContext); */
-  /* 
+  const classes = useStyles();
+
+  const { toggleTheme, activeTheme } = useContext(ThemeContext);
+
   const handleTheme = () => {
     toggleTheme();
-  }; */
+  };
   return (
-    <AppBar position="static" style={{ flexGrow: 1 }}>
-      <Toolbar style={{ justifyContent: "flex-end" }} spacing={2}>
-        <Link to="/">&lt;Home&gt;</Link>
+    <div className={classes.root}>
+      <Grid container alignItems="center" justify="flex-end">
+        <Grid item>
+          <Typography variant="h6">
+            <Link className={classes.link} to="/">
+              &lt;About
+            </Link>
+          </Typography>
+        </Grid>
+        <Grid item>
+          <Typography variant="h6">
+            <Link className={classes.link} to="/experience">
+              &lt;Experience
+            </Link>
+          </Typography>
+        </Grid>
+        <Grid item>
+          <Typography variant="h6">
+            <Link className={classes.link} to="/projects">
+              &lt;Projects
+            </Link>
+          </Typography>
+        </Grid>
+        <Grid item>
+          <Typography variant="h6">
+            <Link className={classes.link} to="/download_cv">
+              &lt;Download CV (in Finnish)
+            </Link>
+          </Typography>
+        </Grid>
 
-        <Link to="/about">&lt;About&gt;</Link>
-
-        <Link to="/projects">&lt;Projects&gt;</Link>
-
-        <Link to="/download_cv">&lt;Download CV (in Finnish)&gt;</Link>
-        {/*       <Switch
+        <Switch
           checked={activeTheme === "dark"}
           onChange={handleTheme}
           color="primary"
-        /> */}
-      </Toolbar>
-    </AppBar>
+        />
+      </Grid>
+    </div>
   );
 };
 

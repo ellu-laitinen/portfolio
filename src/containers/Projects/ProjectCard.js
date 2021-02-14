@@ -15,23 +15,30 @@ const ProjectCard = ({ name, desc, img, alt, link, code }) => {
 
             <Typography>{desc}</Typography>
             <img className="project-image" src={img} alt={alt} />
-
-            <Typography
-              component="a"
-              href={link}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Link to app
-            </Typography>
-            <Typography
-              component="a"
-              href={code}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Link to source code
-            </Typography>
+            <Grid container>
+              <Grid item xs={12}>
+                <Typography
+                  component="a"
+                  variant="subtitle1"
+                  href={link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Link to app
+                </Typography>
+              </Grid>
+              <Grid item xs={12}>
+                <Typography
+                  component="a"
+                  variant="subtitle1"
+                  href={code}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Link to source code
+                </Typography>
+              </Grid>
+            </Grid>
           </CardContent>
         </Card>
       </Grid>

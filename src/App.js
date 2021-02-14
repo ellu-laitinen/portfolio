@@ -1,18 +1,26 @@
-import React from "react";
+import React, { useContext } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "./containers/Home/Home";
 import Projects from "./containers/Projects/Projects";
 import About from "./containers/About/About";
 import "./App.css";
-import Header from "./containers/Header/Header";
+import Navigation from "./containers/Navigation/Navigation";
 import Footer from "./containers/Footer/Footer";
 import Contact from "./containers/Contact/Contact";
 
+import LightTheme from "./_Themes/light";
+import DarkTheme from "./_Themes/dark";
+import ThemeContextProvider from "./_Contexts/ThemeContext";
+
+import { ThemeProvider } from "@material-ui/core/styles";
+import CssBaseline from "@material-ui/core/CssBaseline";
+
 const App = () => {
   return (
-    <div className="App">
+    <ThemeProvider theme={LightTheme}>
       <BrowserRouter>
-        <Header />
+        <CssBaseline />
+        <Navigation />
 
         <Switch>
           <Route path="/" exact component={Home} />
@@ -22,7 +30,7 @@ const App = () => {
         </Switch>
         {/*         <Footer /> */}
       </BrowserRouter>
-    </div>
+    </ThemeProvider>
   );
 };
 

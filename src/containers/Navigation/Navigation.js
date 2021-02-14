@@ -1,35 +1,35 @@
-import React from 'react';
-import Nav from 'react-bootstrap/Nav'
-import { LinkContainer } from 'react-router-bootstrap'
-import './Navigation.css'
+import React, { useContext } from "react";
+import { Link } from "react-router-dom";
+import AppBar from "@material-ui/core/AppBar";
+import Toolbar from "@material-ui/core/Toolbar";
+import Switch from "@material-ui/core/Switch";
+/* 
+import { ThemeContext } from "../../_Contexts/ThemeContext"; */
 
 const Navigation = () => {
-    return (
-        <Nav className="justify-content-end " style={{ width: "90%" }}>
-            <Nav.Item>
-                <LinkContainer style={{ color: "white" }} to="/" exact>
-                    <Nav.Link>&lt;Home&gt;</Nav.Link>
-                </LinkContainer>
-            </Nav.Item>
-            <Nav.Item>
-                <LinkContainer style={{ color: "white" }} to="/about">
-                    <Nav.Link>&lt;About&gt;</Nav.Link>
-                </LinkContainer>
-            </Nav.Item>
-            <Nav.Item>
-                <LinkContainer style={{ color: "white" }} to="/projects">
-                    <Nav.Link>&lt;Projects&gt;</Nav.Link>
-                </LinkContainer>
-            </Nav.Item>
-            <Nav.Item>
-                <LinkContainer style={{ color: "white" }} className="nav-link" to="/download_cv">
-                    <Nav.Link>&lt;Download CV (in Finnish)&gt;</Nav.Link>
-                </LinkContainer>
-            </Nav.Item>
+  /*   const { toggleTheme, activeTheme } = useContext(ThemeContext); */
+  /* 
+  const handleTheme = () => {
+    toggleTheme();
+  }; */
+  return (
+    <AppBar position="static" style={{ flexGrow: 1 }}>
+      <Toolbar style={{ justifyContent: "flex-end" }} spacing={2}>
+        <Link to="/">&lt;Home&gt;</Link>
 
+        <Link to="/about">&lt;About&gt;</Link>
 
-        </Nav>
-    );
-}
+        <Link to="/projects">&lt;Projects&gt;</Link>
+
+        <Link to="/download_cv">&lt;Download CV (in Finnish)&gt;</Link>
+        {/*       <Switch
+          checked={activeTheme === "dark"}
+          onChange={handleTheme}
+          color="primary"
+        /> */}
+      </Toolbar>
+    </AppBar>
+  );
+};
 
 export default Navigation;

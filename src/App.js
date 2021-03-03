@@ -14,24 +14,27 @@ import { ThemeContext } from "./_Contexts/ThemeContext";
 
 import { ThemeProvider } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
+import ProjectContextProvider from "./_Contexts/ProjectContext";
 
 const App = () => {
   const { activeTheme } = useContext(ThemeContext);
   return (
     <div>
       <ThemeProvider theme={activeTheme === "dark" ? DarkTheme : LightTheme}>
-        <CssBaseline />
-        <BrowserRouter>
-          <Navigation />
+        <ProjectContextProvider>
+          <CssBaseline />
+          <BrowserRouter>
+            <Navigation />
 
-          <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/experience" component={About} />
-            <Route path="/projects" component={Projects} />
-            <Route path="/download_cv" component={Contact} />
-          </Switch>
-          {/*         <Footer /> */}
-        </BrowserRouter>
+            <Switch>
+              <Route path="/" exact component={Home} />
+              <Route path="/experience" component={About} />
+              <Route path="/projects" component={Projects} />
+              <Route path="/download_cv" component={Contact} />
+            </Switch>
+          </BrowserRouter>{" "}
+          <Footer />
+        </ProjectContextProvider>
       </ThemeProvider>
     </div>
   );

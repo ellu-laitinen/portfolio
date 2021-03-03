@@ -1,11 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Grid from "@material-ui/core/Grid";
-import Typography from "@material-ui/core/Typography";
-import Card from "@material-ui/core/Card";
+import { Grid, Typography, Card } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import PersonIcon from "@material-ui/icons/Person";
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -76,10 +75,26 @@ const Home = () => {
                   </Typography>
                   . I'm particularly interested in{" "}
                   <b>front-end development and UI/UX design</b>, and I'm eager
-                  to learn more about React and Redux! <br /> Our training
-                  programme is a <b>no-nonsense approach </b> to coding and
-                  we've been writing code and making small projects every day
-                  since day one.
+                  to learn more about React and Redux! <br />{" "}
+                </Typography>
+              </Grid>
+              <Grid item>
+                <Typography>
+                  {" "}
+                  Our training programme is a <b>no-nonsense approach </b> to
+                  coding and we've been writing code and making small projects
+                  every day since day one. I'm currently doing my internship as
+                  an UI/UX designer trainee at{" "}
+                  <Typography
+                    component="a"
+                    variant="subtitle1"
+                    href="https://eduix.fi/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Eduix Oy{" "}
+                  </Typography>
+                  and will graduate in May 2021.
                 </Typography>
               </Grid>
               <Grid item>
@@ -90,9 +105,9 @@ const Home = () => {
                     <li>JavaScript</li>
                     <li>ReactJS</li>
                     <li>Material UI</li>
+                    <li>Figma</li>
                     <li>Redux</li>
                     <li>NodeJS</li>
-                    <li>UI/UX design</li>
                     <li>Scrum method</li>
                   </ul>
                 </Typography>

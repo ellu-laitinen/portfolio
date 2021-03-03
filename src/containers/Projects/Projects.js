@@ -1,14 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 
-import projectsdb from "../../projectsdb";
 import ProjectCard from "./ProjectCard";
+import { ProjectContext } from "../../_Contexts/ProjectContext";
 
 const Projects = () => {
-  const projects = projectsdb;
+  const { project, setProject } = useContext(ProjectContext);
 
-  const projectsList = projects.map((p) => {
+  const projectsList = project.map((p) => {
     return (
       <ProjectCard
         key={p.id}

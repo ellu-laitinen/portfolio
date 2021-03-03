@@ -12,7 +12,7 @@ const PostCard = ({ title, position, ward, duration }) => {
           <CardContent>
             <Typography variant="h5">{title}</Typography>
             <Typography component="p">
-              <Typography variant="subtitle1">{duration}</Typography>
+              <Typography variant="subtitle2">{duration}</Typography>
             </Typography>
             <Typography>{position}</Typography>
 

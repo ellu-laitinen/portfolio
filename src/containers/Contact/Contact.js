@@ -1,37 +1,30 @@
 import React from "react";
 import "./Contact.css";
-import Button from "@material-ui/core/Button";
-import Typography from "@material-ui/core/Typography";
-import Grid from "@material-ui/core/Grid";
+import { Button, Typography, Grid } from "@material-ui/core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
+import Navigation from "../../components/Navigation";
 
 const Contact = () => {
   return (
-    <Grid
-      container
-      direction="row"
-      spacing={2}
-      alignItems="center"
-      justify="center"
-    >
-      <Grid item>
-        <img className="cv" src="./images/CV_Elisabet_Laitinen.png" alt="cv" />
+    <Grid container className="root">
+      <Grid item xs={2}>
+        <Navigation />
       </Grid>
-      <Grid item>
-        <Button>
-          {" "}
-          <Typography
-            variant="subtitle2"
-            component="a"
-            href="/files/CV_Elisabet_Laitinen.pdf"
-            download
-          >
-            {" "}
-            Download the cv{" "}
-            <FontAwesomeIcon className="download-icon" icon={faDownload} />
-          </Typography>
-        </Button>
+      <Grid item xs={10}>
+        <Grid container direction="column">
+          <Grid item>
+            <Typography>LinkedIn</Typography>
+          </Grid>
+
+          <Grid item>
+            <Typography>Sähköposti</Typography>
+          </Grid>
+
+          <Grid item>
+            <Typography>Github</Typography>
+          </Grid>
+        </Grid>
       </Grid>
     </Grid>
   );

@@ -5,6 +5,7 @@ import Typography from "@material-ui/core/Typography";
 import PostCard from "./PostCard";
 import education from "../../education";
 import experience from "../../experience";
+import Navigation from "../../components/Navigation";
 
 const About = () => {
   const schools = education;
@@ -33,14 +34,21 @@ const About = () => {
     );
   });
   return (
-    <Grid container spacing={2} justify="center">
-      <Grid item>
-        <Typography variant="h3">Education </Typography>
-        {schoolList}
+    <Grid container className="root">
+      <Grid item xs={2}>
+        <Navigation />
       </Grid>
-      <Grid item>
-        <Typography variant="h3">Work Experience </Typography>
-        {workList}
+      <Grid item xs={10}>
+        <Grid container spacing={2}>
+          <Grid item>
+            <Typography variant="h3">Education </Typography>
+            {schoolList}
+          </Grid>
+          <Grid item>
+            <Typography variant="h3">Work Experience </Typography>
+            {workList}
+          </Grid>
+        </Grid>
       </Grid>
     </Grid>
   );

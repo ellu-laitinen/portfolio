@@ -4,7 +4,7 @@ import Home from "./containers/Home/Home";
 import Projects from "./containers/Projects/Projects";
 import About from "./containers/About/About";
 import "./App.css";
-import Navigation from "./containers/Navigation/Navigation";
+import Header from "./containers/Header/Header";
 import Footer from "./containers/Footer/Footer";
 import Contact from "./containers/Contact/Contact";
 
@@ -24,16 +24,16 @@ const App = () => {
         <ProjectContextProvider>
           <CssBaseline />
           <BrowserRouter>
-            <Navigation />
+            <Header />
 
             <Switch>
               <Route path="/" exact component={Home} />
               <Route path="/experience" component={About} />
               <Route path="/projects" component={Projects} />
-              <Route path="/download_cv" component={Contact} />
+              <Route path="/contact" component={Contact} />
             </Switch>
           </BrowserRouter>{" "}
-          <Footer />
+          {/*   <Footer /> */}
         </ProjectContextProvider>
       </ThemeProvider>
     </>

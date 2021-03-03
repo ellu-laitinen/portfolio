@@ -16,12 +16,12 @@ const LightTheme = createMuiTheme({
       },
     },
     subtitle2: {
-      color: "black",
+      color: "green",
       textDecoration: "none",
     },
-    h3: {
+    /*  h3: {
       margin: "1rem",
-    },
+    }, */
     h4: {
       marginBottom: "1rem",
     },

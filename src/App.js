@@ -19,7 +19,7 @@ import ProjectContextProvider from "./_Contexts/ProjectContext";
 const App = () => {
   const { activeTheme } = useContext(ThemeContext);
   return (
-    <div>
+    <>
       <ThemeProvider theme={activeTheme === "dark" ? DarkTheme : LightTheme}>
         <ProjectContextProvider>
           <CssBaseline />
@@ -36,7 +36,7 @@ const App = () => {
           <Footer />
         </ProjectContextProvider>
       </ThemeProvider>
-    </div>
+    </>
   );
 };
 

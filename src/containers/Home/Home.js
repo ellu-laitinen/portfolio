@@ -9,6 +9,7 @@ import PersonIcon from "@material-ui/icons/Person";
 const useStyles = makeStyles(() => ({
   root: {
     margin: "2rem",
+    height: "100vh",
   },
   link: {
     color: "red",

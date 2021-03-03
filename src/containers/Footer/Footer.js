@@ -12,9 +12,10 @@ const Footer = () => {
       style={{
         bottom: "0",
         top: "auto",
-        position: "fixed",
+        position: "static",
         backgroundColor: "rgba(128, 128, 128, 0.651)",
         padding: "8px",
+        marginTop: "2rem",
       }}
     >
       <Grid

@@ -21,7 +21,7 @@ const experience = [
   },
   {
     id: 4,
-    title: "HUS Kätilöopisto/Naistenklinikka",
+    title: "HUS Kätilöopisto/ Naistenklinikka",
     duration: "4.7.2016 - 7.10.2018",
     position: "Midwife",
     ward: "Maternity ward",

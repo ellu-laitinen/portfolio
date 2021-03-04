@@ -34,17 +34,17 @@ const About = () => {
     );
   });
   return (
-    <Grid container className="root">
-      <Grid item xs={2}>
+    <Grid container className="root" justify="space-around" spacing={2}>
+      <Grid item xs={12} sm={3} md={2}>
         <Navigation />
       </Grid>
-      <Grid item xs={10}>
+      <Grid item xs={12} sm={9} md={10}>
         <Grid container spacing={2}>
-          <Grid item>
+          <Grid item xs={12}>
             <Typography variant="h3">Education </Typography>
             {schoolList}
           </Grid>
-          <Grid item>
+          <Grid item xs={12}>
             <Typography variant="h3">Work Experience </Typography>
             {workList}
           </Grid>

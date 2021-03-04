@@ -7,8 +7,8 @@ import "./ProjectCard.css";
 
 const ProjectCard = ({ name, desc, img, alt, link, code }) => {
   return (
-    <Grid container spacing={2}>
-      <Grid item lg={6}>
+    <Grid container spacing={4}>
+      <Grid item xs={12} sm={10}>
         <Card>
           <CardContent>
             <Typography variant="h4">{name}</Typography>

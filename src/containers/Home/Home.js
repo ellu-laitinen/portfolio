@@ -7,6 +7,8 @@ import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import PersonIcon from "@material-ui/icons/Person";
 import Navigation from "../../components/Navigation";
 
+import "../../style.scss";
+
 const useStyles = makeStyles(() => ({
   root: {
     margin: "2rem",
@@ -32,11 +34,11 @@ const Home = () => {
   const styles = useStyles();
 
   return (
-    <Grid container className="root">
-      <Grid item xs={12} sm={3}>
+    <Grid container className="root" justify="space-around" spacing={2}>
+      <Grid item xs={12} sm={3} md={2}>
         <Navigation />
       </Grid>
-      <Grid item xs={12} sm={9}>
+      <Grid item xs={12} sm={9} md={10}>
         <Grid container spacing={2}>
           <Grid item>
             <Grid
@@ -80,17 +82,14 @@ const Home = () => {
                       Helsinki Business College
                     </Typography>
                     . I'm particularly interested in{" "}
-                    <b>front-end development and UI/UX design</b>, and I'm eager
-                    to learn more about React and Redux! <br />{" "}
+                    <b>front-end development and UI/UX design.</b> <br />{" "}
                   </Typography>
                 </Grid>
                 <Grid item>
                   <Typography>
                     {" "}
-                    Our training programme is a <b>no-nonsense approach </b> to
-                    coding and we've been writing code and making small projects
-                    every day since day one. I'm currently doing my internship
-                    as an UI/UX designer trainee at{" "}
+                    I'm currently doing my internship as an UI/UX designer
+                    trainee at{" "}
                     <Typography
                       component="a"
                       variant="subtitle1"
@@ -116,30 +115,6 @@ const Home = () => {
                       <li>NodeJS</li>
                       <li>Scrum method</li>
                     </ul>
-                  </Typography>
-                </Grid>
-                <Grid item>
-                  <Typography>
-                    On the{" "}
-                    <Typography
-                      variant="subtitle1"
-                      component="a"
-                      href="/experience"
-                    >
-                      experience
-                    </Typography>{" "}
-                    page you can see my work experience and education.
-                    <br />
-                    On the{" "}
-                    <Typography
-                      variant="subtitle1"
-                      component="a"
-                      href="/projects"
-                    >
-                      projects
-                    </Typography>{" "}
-                    page you can see some of the projects I've made, links to
-                    the working apps and links to the source codes as well.
                   </Typography>
                 </Grid>
               </Grid>

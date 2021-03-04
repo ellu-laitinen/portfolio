@@ -15,6 +15,7 @@ import { ThemeContext } from "./_Contexts/ThemeContext";
 import { ThemeProvider } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import ProjectContextProvider from "./_Contexts/ProjectContext";
+import Container from "@material-ui/core/Container";
 
 const App = () => {
   const { activeTheme } = useContext(ThemeContext);
@@ -30,7 +31,6 @@ const App = () => {
               <Route path="/" exact component={Home} />
               <Route path="/experience" component={About} />
               <Route path="/projects" component={Projects} />
-              <Route path="/contact" component={Contact} />
             </Switch>
           </BrowserRouter>{" "}
           {/*   <Footer /> */}

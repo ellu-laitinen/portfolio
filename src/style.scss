@@ -1,7 +1,10 @@
 .active {
-  color: black;
   font-weight: bold;
   text-decoration: underline;
+}
+
+.header {
+  background-color: rgb(201, 251, 222);
 }
 
 .navIcon {
@@ -11,6 +14,7 @@
 
 .root {
   /*   margin: 2rem; */
+  padding: 2rem;
   height: 100vh;
 }
 

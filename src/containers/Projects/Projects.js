@@ -23,7 +23,7 @@ const Projects = () => {
     );
   });
   return (
-    <Grid container /* className="root" */ spacing={2}>
+    <Grid container className="root" justify="space-around" spacing={2}>
       <Grid item xs={12} sm={3} md={2}>
         <Navigation />
       </Grid>
@@ -47,8 +47,8 @@ const Projects = () => {
                   >
                     GitHub.
                   </Typography>
-                  This portfolio was made with ReactJS and Material UI. The
-                  source code can be found{" "}
+                  <b> This portfolio</b> was made with ReactJS and Material UI.
+                  The source code can be found{" "}
                   <Typography
                     component="a"
                     variant="subtitle1"

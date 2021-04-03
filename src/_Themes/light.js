@@ -59,7 +59,7 @@ LightTheme.overrides = {
   MuiCard: {
     root: {
       padding: "1rem",
-      backgroundColor: grey[200],
+      backgroundColor: teal[50],
     },
   },
   MuiLink: {

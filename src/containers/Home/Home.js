@@ -88,8 +88,8 @@ const Home = () => {
                 <Grid item>
                   <Typography>
                     {" "}
-                    I'm currently doing my internship as an UI/UX designer
-                    trainee at{" "}
+                    I'm currently doing my internship as an UI/UX designer /
+                    front-end developer trainee at{" "}
                     <Typography
                       component="a"
                       variant="subtitle1"

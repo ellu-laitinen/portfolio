@@ -6,6 +6,17 @@ const ProjectContextProvider = (props) => {
   const [project, setProject] = useState([
     {
       id: 1,
+      name: "Recipe App",
+      desc:
+        "The name says it all - an app where I keep food recipes. Still a work in process! Right now you can add recipes, remove and edit them. And read them too, of course. Backend is done with AWS Amplify. Data is stored in DynamoDB and images are stored in Amazon S3. No link available for this app, unfortunately, due to privacy reasons.",
+      img: "./images/recipeApp.png",
+      img2: "./images/editrecipe.png",
+      alt: "Create, read and edit recipe",
+
+      code: "https://github.com/ellu-laitinen/reseptit",
+    },
+    {
+      id: 2,
       name: "Music from my year",
       desc:
         "Music From My Year is a React App that uses Spotify API. The user can select the year, genre and the amount of results they want to get. Background image and title font change with each decade. It was a group project, made by 3 students in 3,5 weeks.",
@@ -15,7 +26,7 @@ const ProjectContextProvider = (props) => {
       code: "https://github.com/ellu-laitinen/music-app",
     },
     {
-      id: 2,
+      id: 3,
       name: "Christmas advent calendar for kids",
       desc:
         "A christmas advent calendar I made for kids. I Finnish only! React app. Uses Localstorage to keep the opened windows open after refreshing the page. At the moment all windows can be opened, but from Dec 1st 2020 you can only open the current and previous days' windows.",

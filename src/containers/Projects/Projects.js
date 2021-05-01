@@ -16,6 +16,7 @@ const Projects = () => {
         name={p.name}
         desc={p.desc}
         img={p.img}
+        img2={p.img2}
         alt={p.alt}
         link={p.link}
         code={p.code}

@@ -25,16 +25,6 @@ const ProjectContextProvider = (props) => {
       code: "https://github.com/ellu-laitinen/lunas-calendar",
     },
     {
-      id: 3,
-      name: "React Halloween Shop",
-      desc:
-        "Project made with 'React -the complete guide' from Udemy.com course by Maximilian Schwarzmüller. The original project was a Burger App, but I modified my own project and turned it into a Halloween Shop.",
-      img: "./images/halloween_shop.jpg",
-      alt: "Halloween shop front page with Halloween items",
-      link: "https://react-burger-app-45ff5.web.app/",
-      code: "https://github.com/ellu-laitinen/react-halloween-shop-project",
-    },
-    {
       id: 4,
       name: "Speed Game",
       desc: "School project: a classic speed game. Built with React.",

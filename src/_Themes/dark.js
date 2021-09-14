@@ -20,9 +20,9 @@ const DarkTheme = createMuiTheme({
     h3: {
       marginBottom: "1rem",
     },
-    /*    h4: {
+    h4: {
       marginBottom: "1rem",
-    }, */
+    },
     h5: {
       color: "white",
     },

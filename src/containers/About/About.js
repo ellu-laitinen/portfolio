@@ -6,6 +6,8 @@ import PostCard from "./PostCard";
 import education from "../../education";
 import experience from "../../experience";
 import Navigation from "../../components/Navigation";
+import school_icon from "@material-ui/icons/School";
+import work_icon from "@material-ui/icons/Work";
 
 const About = () => {
   const schools = education;
@@ -13,13 +15,16 @@ const About = () => {
 
   const schoolList = schools.map((p) => {
     return (
-      <PostCard
-        key={p.id}
-        title={p.title}
-        position={p.position}
-        ward={p.ward}
-        duration={p.duration}
-      />
+      <>
+        <PostCard
+          key={p.id}
+          title={p.title}
+          position={p.position}
+          ward={p.ward}
+          duration={p.duration}
+          icon={school_icon}
+        />
+      </>
     );
   });
   const workList = work.map((p) => {
@@ -30,6 +35,7 @@ const About = () => {
         position={p.position}
         ward={p.ward}
         duration={p.duration}
+        icon={work_icon}
       />
     );
   });

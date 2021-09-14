@@ -58,9 +58,9 @@ const Home = () => {
               <Grid item xs={12} sm={6}>
                 {" "}
                 <Typography variant="h6">
-                  Elisabet Laitinen, junior front-end developer with{" "}
+                  Elisabet Laitinen, junior software developer with{" "}
                   <FontAwesomeIcon icon={faHeart} style={{ color: "red" }} />{" "}
-                  for UI/UX design!
+                  for frontend development!
                 </Typography>
               </Grid>
             </Grid>
@@ -70,26 +70,8 @@ const Home = () => {
               <Grid container spacing={2} direction="column">
                 <Grid item>
                   <Typography>
-                    Hi! Welcome to my portfolio! My name is Elisabet, and I'm a
-                    Full Stack Web development student in{" "}
-                    <Typography
-                      component="a"
-                      variant="subtitle1"
-                      href="https://www.bc.fi/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Helsinki Business College
-                    </Typography>
-                    . I'm particularly interested in{" "}
-                    <b>front-end development and UI/UX design.</b> <br />{" "}
-                  </Typography>
-                </Grid>
-                <Grid item>
-                  <Typography>
-                    {" "}
-                    I'm currently doing my internship as an UI/UX designer /
-                    front-end developer trainee at{" "}
+                    Hi! Welcome to my portfolio! My name is Elisabet, and I'm
+                    currently working as a Junior Software Developer at{" "}
                     <Typography
                       component="a"
                       variant="subtitle1"
@@ -99,7 +81,13 @@ const Home = () => {
                     >
                       Eduix Oy{" "}
                     </Typography>
-                    and will graduate in May 2021.
+                    . I'm particularly interested in{" "}
+                    <b>front-end development</b>, but I have recently noticed a
+                    <b>
+                      {" "}
+                      growing interest towards backend development as well.
+                    </b>{" "}
+                    <br />{" "}
                   </Typography>
                 </Grid>
                 <Grid item>
@@ -110,6 +98,7 @@ const Home = () => {
                       <li>JavaScript</li>
                       <li>ReactJS</li>
                       <li>Material UI</li>
+                      <li>Bootstrap</li>
                       <li>Figma</li>
                       <li>Redux</li>
                       <li>NodeJS</li>

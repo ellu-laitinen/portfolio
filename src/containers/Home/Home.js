@@ -6,8 +6,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import PersonIcon from "@material-ui/icons/Person";
 import Navigation from "../../components/Navigation";
+import { FacebookShareButton, FacebookIcon } from "react-share";
 
 import "../../style.scss";
+import HelmetMetaData from "../../Helmet/HelmetMetaData";
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -35,8 +37,15 @@ const Home = () => {
 
   return (
     <Grid container className="root" justify="space-around" spacing={2}>
+      <HelmetMetaData title="homepage"></HelmetMetaData>
       <Grid item xs={12} sm={3} md={2}>
         <Navigation />
+        <FacebookShareButton
+          url={"http://www.ellulaitinen.com"}
+          quote={"Ellu's portfolio"}
+        >
+          <FacebookIcon size={36} />
+        </FacebookShareButton>
       </Grid>
       <Grid item xs={12} sm={9} md={10}>
         <Grid container spacing={2}>

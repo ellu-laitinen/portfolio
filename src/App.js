@@ -16,6 +16,7 @@ import { ThemeProvider } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import ProjectContextProvider from "./_Contexts/ProjectContext";
 import Container from "@material-ui/core/Container";
+import HelmetMetaData from "./Helmet/HelmetMetaData";
 
 const App = () => {
   const { activeTheme } = useContext(ThemeContext);
@@ -24,6 +25,7 @@ const App = () => {
       <ThemeProvider theme={activeTheme === "dark" ? DarkTheme : LightTheme}>
         <ProjectContextProvider>
           <CssBaseline />
+          {/*     <HelmetMetaData></HelmetMetaData> */}
           <BrowserRouter>
             <Header />
 

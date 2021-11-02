@@ -8,6 +8,7 @@ import experience from "../../experience";
 import Navigation from "../../components/Navigation";
 import school_icon from "@material-ui/icons/School";
 import work_icon from "@material-ui/icons/Work";
+import HelmetMetaData from "../../Helmet/HelmetMetaData";
 
 const About = () => {
   const schools = education;
@@ -41,6 +42,7 @@ const About = () => {
   });
   return (
     <Grid container className="root" justify="space-around" spacing={2}>
+      <HelmetMetaData title="about me & education"></HelmetMetaData>
       <Grid item xs={12} sm={3} md={2}>
         <Navigation />
       </Grid>
